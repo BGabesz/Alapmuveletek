@@ -18,6 +18,7 @@ public class Muveletek extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         pnlGyakorlas = new javax.swing.JPanel();
         lblFeladat = new javax.swing.JLabel();
         txtEredmeny = new javax.swing.JTextField();
@@ -41,9 +42,14 @@ public class Muveletek extends javax.swing.JFrame {
         mnuFajl = new javax.swing.JMenu();
         mnuFajlMegnyit = new javax.swing.JMenuItem();
         mnuFajlMent = new javax.swing.JMenuItem();
+        mnuFajlMentesMaskent = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         mnuFajlKilep = new javax.swing.JMenuItem();
         mnuMuvelet = new javax.swing.JMenu();
+        mnuOsszeadas = new javax.swing.JRadioButtonMenuItem();
+        mnuKivonas = new javax.swing.JRadioButtonMenuItem();
+        mnuOsztas = new javax.swing.JRadioButtonMenuItem();
+        mnuSzorzas = new javax.swing.JRadioButtonMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Alapműveletek gyakoroltatása");
@@ -198,6 +204,9 @@ public class Muveletek extends javax.swing.JFrame {
 
         mnuFajlMent.setText("Ment");
         mnuFajl.add(mnuFajlMent);
+
+        mnuFajlMentesMaskent.setText("Mentés másként...");
+        mnuFajl.add(mnuFajlMentesMaskent);
         mnuFajl.add(jSeparator1);
 
         mnuFajlKilep.setText("Kilép");
@@ -206,6 +215,38 @@ public class Muveletek extends javax.swing.JFrame {
         jMenuBar1.add(mnuFajl);
 
         mnuMuvelet.setText("Műveletek");
+
+        buttonGroup1.add(mnuOsszeadas);
+        mnuOsszeadas.setText("Összeadás");
+        mnuOsszeadas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuOsszeadasActionPerformed(evt);
+            }
+        });
+        mnuMuvelet.add(mnuOsszeadas);
+
+        buttonGroup1.add(mnuKivonas);
+        mnuKivonas.setText("Kivonás");
+        mnuKivonas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuKivonasActionPerformed(evt);
+            }
+        });
+        mnuMuvelet.add(mnuKivonas);
+
+        buttonGroup1.add(mnuOsztas);
+        mnuOsztas.setText("Osztás");
+        mnuOsztas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuOsztasActionPerformed(evt);
+            }
+        });
+        mnuMuvelet.add(mnuOsztas);
+
+        buttonGroup1.add(mnuSzorzas);
+        mnuSzorzas.setText("Szorzás");
+        mnuMuvelet.add(mnuSzorzas);
+
         jMenuBar1.add(mnuMuvelet);
 
         setJMenuBar(jMenuBar1);
@@ -252,6 +293,18 @@ public class Muveletek extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btnMegoldasActionPerformed
 
+    private void mnuOsszeadasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuOsszeadasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnuOsszeadasActionPerformed
+
+    private void mnuKivonasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuKivonasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnuKivonasActionPerformed
+
+    private void mnuOsztasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuOsztasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnuOsztasActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -294,6 +347,7 @@ public class Muveletek extends javax.swing.JFrame {
     private javax.swing.JButton btnEllenorzes;
     private javax.swing.JButton btnMegoldas;
     private javax.swing.JButton btnUj;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPopupMenu.Separator jSeparator1;
@@ -314,7 +368,12 @@ public class Muveletek extends javax.swing.JFrame {
     private javax.swing.JMenuItem mnuFajlKilep;
     private javax.swing.JMenuItem mnuFajlMegnyit;
     private javax.swing.JMenuItem mnuFajlMent;
+    private javax.swing.JMenuItem mnuFajlMentesMaskent;
+    private javax.swing.JRadioButtonMenuItem mnuKivonas;
     private javax.swing.JMenu mnuMuvelet;
+    private javax.swing.JRadioButtonMenuItem mnuOsszeadas;
+    private javax.swing.JRadioButtonMenuItem mnuOsztas;
+    private javax.swing.JRadioButtonMenuItem mnuSzorzas;
     private javax.swing.JPanel pnlGyakorlas;
     private javax.swing.JTextField txtEredmeny;
     // End of variables declaration//GEN-END:variables
