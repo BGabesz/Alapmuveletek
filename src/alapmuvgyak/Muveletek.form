@@ -20,13 +20,16 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Ment"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mnuFajlMentActionPerformed"/>
+              </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="mnuFajlMentesMaskent">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuMentesMaskent">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Ment&#xe9;s m&#xe1;sk&#xe9;nt..."/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mnuFajlMentesMaskentActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuMentesMaskentActionPerformed"/>
               </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator1">
@@ -43,18 +46,15 @@
             <Property name="text" type="java.lang.String" value="M&#x171;veletek"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="mnuOsszeadas">
+            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="rdbntOsszead">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="buttonGroup1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="&#xd6;sszead&#xe1;s"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mnuOsszeadasActionPerformed"/>
-              </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="mnuKivonas">
+            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="rdbntKivon">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="buttonGroup1"/>
@@ -62,25 +62,26 @@
                 <Property name="text" type="java.lang.String" value="Kivon&#xe1;s"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mnuKivonasActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rdbntKivonActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="mnuOsztas">
+            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="rdbntOszt">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="buttonGroup1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Oszt&#xe1;s"/>
+                <Property name="text" type="java.lang.String" value="Oszt&#xe1;s "/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mnuOsztasActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rdbntOsztActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="mnuSzorzas">
+            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="rdbntSzoroz">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="buttonGroup1"/>
                 </Property>
+                <Property name="selected" type="boolean" value="true"/>
                 <Property name="text" type="java.lang.String" value="Szorz&#xe1;s"/>
               </Properties>
             </MenuItem>
@@ -119,14 +120,14 @@
                   <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
                   <Group type="102" attributes="0">
                       <Component id="pnlGyakorlas" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="35" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="btnUj" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="btnMegoldas" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="17" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
