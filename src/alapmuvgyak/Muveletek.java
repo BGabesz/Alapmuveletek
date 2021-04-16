@@ -8,6 +8,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import sun.swing.MenuItemCheckIconFactory;
 
 public class Muveletek extends javax.swing.JFrame {
 
@@ -317,22 +318,29 @@ public class Muveletek extends javax.swing.JFrame {
     }//GEN-LAST:event_rdbntKivonActionPerformed
 
     private void mnuFajlMentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuFajlMentActionPerformed
-       JFileChooser fc = new JFileChooser();
-       fc.setDialogTitle("Fájl mentése");
-       fc.setCurrentDirectory(new File("."));
-       fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-       
-       int valasztottGomb = fc.showSaveDialog(this);
-       if(valasztottGomb==JFileChooser.APPROVE_OPTION){
-           File f= fc.getSelectedFile();
-           if(f.isDirectory()){
-           lblEredmeny.setText("<html>Elérés: "+ f.getPath()+ "<br>Könyvtár: "+f.getName()+"<html>");
-           try{
-               Files.write(Paths.get(f.getPath()+"stat.txt"),"statisztika".getBytes());
-           }   catch (IOException ex) {
-                   Logger.getLogger(Muveletek.class.getName()).log(Level.SEVERE, null, ex);
-               }
-           }
+//       JFileChooser fc = new JFileChooser();
+//       fc.setDialogTitle("Fájl mentése");
+//       fc.setCurrentDirectory(new File("."));
+//       fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+//       
+//       int valasztottGomb = fc.showSaveDialog(this);
+//       if(valasztottGomb==JFileChooser.APPROVE_OPTION){
+//           File f= fc.getSelectedFile();
+//           if(f.isDirectory()){
+//           lblEredmeny.setText("<html>Elérés: "+ f.getPath()+ "<br>Könyvtár: "+f.getName()+"<html>");
+//           try{
+//               Files.write(Paths.get(f.getPath()+"stat.txt"),"statisztika".getBytes());
+//           }   catch (IOException ex) {
+//                   Logger.getLogger(Muveletek.class.getName()).log(Level.SEVERE, null, ex);
+//               }
+            if (true) {
+                MnuFajlMentesMaskentActionPerformanced
+            }else {
+            try{
+               Files.vrite(Paths.get(menettFajl),"Statisztika: ment".getBytes());
+           }catch (IOException ex) {
+           Logger.getLogger(Muveletek.class.getName()).log(Level,SEVERE, null, ex);
+                   
        }
     }//GEN-LAST:event_mnuFajlMentActionPerformed
 
